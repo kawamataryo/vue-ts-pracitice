@@ -16,13 +16,9 @@
     public input(value: string){
     }
 
-    @Emit()
-    public clicked(){
-    }
-
+    @Emit('clicked')
     public onClick() {
       this.input(this.initialValue);
-      this.clicked()
     }
 
     public created() {
